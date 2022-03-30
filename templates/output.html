@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load mathfilters %}
+
+    <h3>
+        The estimated weight of the {{ species }} fish is <br>
+        {{ weight }} grams.
+    </h3>
+    <small>Note: This is an estimate & maybe off by upto 10%. </small>
+{% endblock %}
