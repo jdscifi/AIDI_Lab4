@@ -73,6 +73,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ["https://fathomless-river-66411.herokuapp.com"]
+
+
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
