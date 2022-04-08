@@ -32,7 +32,7 @@ def index(request):
             if y_pred < 0:
                 return render(request, '../templates/error.html',context={"species": es['species'][0]})
             return render(request, '../templates/output.html',
-                          context={"species": es['species'][0], "weight": "{:.2f}".format(y_pred)})
+                          context={"species": es['species'][0], "weight": "{:.2f}".format(y_pred),"csrfviewmiddleware":})
         except Exception as e:
             print(e)
             return render(request, '../templates/form.html', context=context)
